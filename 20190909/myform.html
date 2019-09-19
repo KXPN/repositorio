@@ -1,0 +1,54 @@
+<!--
+https://formspree.io/
+https://www.netlify.com/
+https://formkeep.com/
+-->
+<form method="get" action="results.html" autocomplete="off">
+  <input name="nombre" type="text">
+  <input name="años" type="number"><!--Por qué no envia con enter?-->
+</form>
+<form method="get" action="results.html">
+  <fieldset>
+    <legend>Personal information</legend>
+    <div>
+      <label for="username">User name</label>
+      <input id="username" name="username" type="text" minlength="2" maxlength="8" autocomplete="off" placeholder="User name">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="User letter and numbers">
+    </div>
+    <div>
+      <label for="birthdate">Birth date</label>
+      <input id="birthdate" name="birthdate" type="date" min="1990-01-01" max="2006-01-01">
+    </div>
+    <div>
+      <label for="useremail">Type your email</label>
+      <input id="useremail" name="useremail" type="email" autofocus required="required">
+    </div>
+    <div>
+      <label for="userfavbrowser">What is your fav browser</label>
+      <input id="userfavbrowser" type="text" list="browsers">
+      <datalist id="browsers">
+        <option value="chrome"></option>
+        <option value="safari"></option>
+        <option value="internetexplrer"></option>
+        <option value="firefox"></option>
+      </datalist>
+    </div>
+  </fieldset>
+  <label>
+    Label
+    <input type="text" name="xd">
+  </label>
+  <div>
+    <label for="disabled">Disabled</label>
+    <input id="disabled" type="text" name="disabled" value="HI" disabled>
+  </div>
+  <div>
+    <label for="readonly">Read only</label>
+    <input id="readonly" type="text" name="readonly" value="HUGE" readonly>
+  </div>
+  <input type="hidden" name="campain" value="campain_cat">
+  <input value="Enviar" type="submit">
+</form>
